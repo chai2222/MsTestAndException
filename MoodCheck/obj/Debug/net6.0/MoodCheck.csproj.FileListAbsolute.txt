@@ -1,0 +1,5 @@
+E:\TestUser\MoodCheck\obj\Debug\net6.0\MoodCheck.csproj.AssemblyReference.cache
+E:\TestUser\MoodCheck\obj\Debug\net6.0\MoodCheck.GeneratedMSBuildEditorConfig.editorconfig
+E:\TestUser\MoodCheck\obj\Debug\net6.0\MoodCheck.AssemblyInfoInputs.cache
+E:\TestUser\MoodCheck\obj\Debug\net6.0\MoodCheck.AssemblyInfo.cs
+E:\TestUser\MoodCheck\obj\Debug\net6.0\MoodCheck.csproj.CoreCompileInputs.cache
