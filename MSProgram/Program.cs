@@ -12,9 +12,9 @@
             //Creating object of MoodAnalyser class
 
             MoodAnalyser moodobj = new MoodAnalyser(message);
+            string store = moodobj.AnalyseMood();
 
-
-            Console.WriteLine(moodobj.AnalyseMood());
+            Console.WriteLine(store + "Mood");
         }
     }
 }

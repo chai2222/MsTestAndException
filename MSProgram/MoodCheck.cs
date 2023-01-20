@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace MSProgram
 {
+
 
     public class MoodAnalyser
     {
@@ -23,13 +20,26 @@ namespace MSProgram
 
         public string AnalyseMood()
         {
-            if (message.ToUpper().Contains("SAD"))
+            try
             {
-                return "Sad Mood";
+                if (this.message.Equals(string.Empty))
+                {
+                    throw new MoodAnalyserCustomException(MoodAnalyserCustomException.ExceptionType.EMPTY_MESSAGE, "Mood Should Not Be Empty");
+
+                }
+                if (message.ToUpper().Contains("SAD"))
+                {
+                    return "Sad";
+                }
+                else
+                {
+                    return "Happy";
+                }
             }
-            else
+
+            catch (MoodAnalyserCustomException)
             {
-                return "Happy Mood";
+                return "Mood Should Not Be Empty";
             }
         }
     }
